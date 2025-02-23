@@ -13,6 +13,8 @@ module.exports = async () => {
     try
     {
         await sequelize.authenticate();
+        await sequelize.sync({ alter: true });
+        
         console.log('[DB] Connection to database established');
     }
     catch(err)
