@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Environment variable settings
-ENV PORT = 8000
+ENV PORT=8000
 
 # Expose the port so our computer can use it
 EXPOSE 8000
